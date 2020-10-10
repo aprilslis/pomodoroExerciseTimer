@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import StopWatch from '../components/stopWatch';
 
 
 export class SettingPage extends Component{
@@ -8,8 +9,9 @@ export class SettingPage extends Component{
     }
     render(){
         return(
-            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <View >
                 <Text>Settings</Text>
+                <StopWatch />
             </View>);
     }
 }

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { LoginPage } from './pages/loginPage';
 import { SettingPage } from './pages/settingPage';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -36,4 +38,11 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+
+
+
+
+
+
 
