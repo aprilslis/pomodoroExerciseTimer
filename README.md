@@ -4,5 +4,5 @@
 # Why was this made?
 To stay healthy, including making sure that those who are working from home can be productive and can prevent health issues.
 
-#Tech Stack
+# Tech Stack
 - React Native
