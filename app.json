@@ -1,5 +1,8 @@
 {
   "expo": {
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
     "name": "pomodoraExerciser",
     "slug": "pomodoraExerciser",
     "version": "1.0.0",
@@ -18,9 +21,7 @@
     ],
     "ios": {
       "supportsTablet": true
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
     }
+    
   }
 }
