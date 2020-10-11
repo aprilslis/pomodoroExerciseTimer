@@ -5,7 +5,17 @@ import StopWatch from '../components/stopWatch';
 export class TimerHome extends Component{
     constructor(){
         super();
+        this.timerRef = React.createRef();
     }
+
+    componentDidMount(){
+        this.timerRef.current.addObserver(()=>console.log("notified"));
+        //Usage:
+        //The function will be call when the timer reach 0
+        //this.timerRef.current.addObserver(functionName));
+        
+    }
+
     render(){
         return(
             <View style={{flex: 1,
@@ -17,7 +27,7 @@ export class TimerHome extends Component{
                 style={styles.logo}
                 source={require('./tomato.jpg')}
             />
-            <StopWatch> </StopWatch>
+            <StopWatch ref={this.timerRef} startTime='5'> </StopWatch>
         </View>);
     }
 }

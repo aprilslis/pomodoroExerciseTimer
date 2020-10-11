@@ -4,12 +4,19 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 export default class StopWatch extends Component {
  
+  observer = [];
+  addObserver(callback){
+    this.observer.push(callback);
+  }
+  notifyUser(){
+    this.observer.forEach(callback => callback());
+  }
     constructor(props) {
       super(props);
-   
+      
       this.state = {
         timer: null,
-        minutes_Counter: '25',
+        minutes_Counter: this.props.startTime,
         seconds_Counter: '00',
         startDisable: false
       }
@@ -29,6 +36,11 @@ export default class StopWatch extends Component {
         if (Number(this.state.seconds_Counter) == 0) {
           count = (Number(this.state.minutes_Counter) - 1).toString();
           num = '59';
+        }
+        if(this.state.seconds_Counter == '00' && this.state.minutes_Counter == '00'){
+          this.onButtonStop();
+          this.notifyUser();
+          return;
         }
    
         this.setState({
