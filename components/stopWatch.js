@@ -9,7 +9,7 @@ export default class StopWatch extends Component {
    
       this.state = {
         timer: null,
-        minutes_Counter: '00',
+        minutes_Counter: '25',
         seconds_Counter: '00',
         startDisable: false
       }
@@ -23,12 +23,12 @@ export default class StopWatch extends Component {
    
       let timer = setInterval(() => {
    
-        var num = (Number(this.state.seconds_Counter) + 1).toString(),
+        var num = (Number(this.state.seconds_Counter) - 1).toString(),
           count = this.state.minutes_Counter;
    
-        if (Number(this.state.seconds_Counter) == 59) {
-          count = (Number(this.state.minutes_Counter) + 1).toString();
-          num = '00';
+        if (Number(this.state.seconds_Counter) == 0) {
+          count = (Number(this.state.minutes_Counter) - 1).toString();
+          num = '59';
         }
    
         this.setState({
@@ -51,7 +51,7 @@ export default class StopWatch extends Component {
     onButtonClear = () => {
       this.setState({
         timer: null,
-        minutes_Counter: '00',
+        minutes_Counter: '25',
         seconds_Counter: '00',
       });
     }
