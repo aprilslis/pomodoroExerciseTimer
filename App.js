@@ -3,6 +3,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { LoginPage } from './pages/loginPage';
+import { AchievementPage } from './pages/achievementPage';
 import { SettingPage } from './pages/settingPage';
 
 const Tab = createBottomTabNavigator();
@@ -21,6 +22,9 @@ export default function App() {
             } else if (route.name === 'Settings') {
               iconName = focused ? 'ios-list-box' : 'ios-list';
             }
+            else if (route.name === 'Achievement'){
+              iconName = 'ios-journal'
+            }
 
             return <Ionicons name={iconName} size={size} color={color} />;
           },
@@ -31,6 +35,7 @@ export default function App() {
         }}
       >
         <Tab.Screen name="Home" component={LoginPage} />
+        <Tab.Screen name="Achievement" component={AchievementPage} />
         <Tab.Screen name="Settings" component={SettingPage} />
       </Tab.Navigator>
     </NavigationContainer>
