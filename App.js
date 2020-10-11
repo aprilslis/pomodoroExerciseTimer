@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { LoginPage } from './pages/loginPage';
 import { SettingPage } from './pages/settingPage';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { TimerHome } from './pages/timerHome';
 
 
 const Tab = createBottomTabNavigator();
@@ -32,7 +33,7 @@ export default function App() {
           inactiveTintColor: 'gray',
         }}
       >
-        <Tab.Screen name="Home" component={LoginPage} />
+        <Tab.Screen name="Home" component={TimerHome} />
         <Tab.Screen name="Settings" component={SettingPage} />
       </Tab.Navigator>
     </NavigationContainer>
