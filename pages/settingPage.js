@@ -9,7 +9,7 @@ export class SettingPage extends Component{
     }
     render(){
         return(
-            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center',backgroundColor: '#F5FCFF'}}>
+            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
                 <Text>Settings</Text>
             </View>);
     }
