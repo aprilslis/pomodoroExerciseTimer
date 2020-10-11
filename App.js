@@ -6,6 +6,7 @@ import { LoginPage } from './pages/loginPage';
 import { SettingPage } from './pages/settingPage';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { TimerHome } from './pages/timerHome';
+import { AchievementPage } from './pages/achievementPage';
 
 
 const Tab = createBottomTabNavigator();
@@ -23,6 +24,8 @@ export default function App() {
               iconName = focused ? 'ios-information-circle' : 'ios-information-circle-outline';
             } else if (route.name === 'Settings') {
               iconName = focused ? 'ios-list-box' : 'ios-list';
+            } else if (route.name === 'Achievement'){
+              iconName = 'ios-journal';
             }
 
             return <Ionicons name={iconName} size={size} color={color} />;
@@ -34,6 +37,7 @@ export default function App() {
         }}
       >
         <Tab.Screen name="Home" component={TimerHome} />
+        <Tab.Screen name="Achievement" component={AchievementPage} />
         <Tab.Screen name="Settings" component={SettingPage} />
       </Tab.Navigator>
     </NavigationContainer>
