@@ -8,8 +8,6 @@ import {
     Button,
     TouchableHighlight
 } from 'react-native';
-import StopWatch from '../components/stopWatch';
-
 
 export class SettingPage extends Component {
     constructor() {
@@ -22,16 +20,11 @@ export class SettingPage extends Component {
                     style={styles.title}>
                     Settings
                 </Text>
-
                 <TextInput style={styles.text} placeholder='Change Username' />
-
                 <TextInput style={styles.text} placeholder='Change Email' />
-
                 <TextInput style={styles.text} placeholder='Change Password' />
-
                 <TextInput style={styles.text} placeholder='Confirm New Password' />
                 <View style={{ margin: 10 }} />
-
 
                 <TouchableHighlight
                     style={styles.button}>
