@@ -105,14 +105,14 @@ export default class StopWatch extends Component {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#F5FCFF',
+      backgroundColor: '#FFFFFF',
     },
     button: {
-      width: '80%',
+      width: 1000,
       paddingTop:8,
       paddingBottom:8,
       borderRadius:7,
-      marginTop: 10
+      marginTop: 10,
     },
     buttonText:{
         color:'#fff',
