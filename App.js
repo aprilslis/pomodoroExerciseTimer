@@ -1,12 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { LoginPage } from './pages/loginPage';
 import { AchievementPage } from './pages/achievementPage';
 import { SettingPage } from './pages/settingPage';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import { TimerHome } from './pages/timerHome';
+import { TimerPage } from './pages/timerPage';
 
 
 const Tab = createBottomTabNavigator();
@@ -37,7 +36,7 @@ export default function App() {
           inactiveTintColor: 'gray',
         }}
       >
-        <Tab.Screen name="Home" component={TimerHome} />
+        <Tab.Screen name="Home" component={TimerPage} />
         <Tab.Screen name="Achievement" component={AchievementPage} />
         <Tab.Screen name="Settings" component={SettingPage} />
       </Tab.Navigator>

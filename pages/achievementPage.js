@@ -14,7 +14,7 @@ export function AchievementPage({navigation}){
     })
 
     return(
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#F5FCFF'}}>
             <Text>Achievement</Text>
             <Text>Streak: {streakData.streak}</Text>
             <Text>Last Completed Time: {streakData.lastCompletionDate}</Text>
