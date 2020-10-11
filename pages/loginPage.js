@@ -18,66 +18,64 @@ export class LoginPage extends Component {
         return (
             <ScrollView style={{ padding: 20, }}>
                 <Text
-                    style={{ fontSize: 36,
-                    fontFamily: 'sans-serif',
-                    color:'orange',
-                    margin: 10,
-                    alignItems: 'center',}}>
+                    style={styles.title}>
                     Pomodoro Login
                 </Text>
-                <TextInput style={{
-                    backgroundColor: "white",
-                    paddingVertical: 12,
-                    paddingHorizontal: 25,
-                    borderRadius: 25,
-                    margin: 10,
-                    alignItems: 'center',
-                }} placeholder='Username' />
-                <TextInput style={{
-                    backgroundColor: "white",
-                    paddingVertical: 12,
-                    paddingHorizontal: 25,
-                    borderRadius: 25,
-                    margin: 10,
-                }} placeholder='Password' />
+                <TextInput style={styles.text} placeholder='Email' />
+                <TextInput style={styles.text} placeholder='Password' />
                 <View style={{ margin: 10 }} />
-            
 
-                <TouchableHighlight 
-                style ={{
-                    height: 40,
-                    width:160,
-                    borderRadius:10,
-                    color:"orange",
-                    backgroundColor : "orange",
-                    marginLeft :50,
-                    marginRight:50,
-                    marginTop :20,
-                    alignItems: 'center',
-                }}>
-            <Button 
-                    onPress={this.props.onLoginPress}
-                    title="Submit"
-                />
-          </TouchableHighlight>
+
+                <TouchableHighlight
+                    style={styles.button}>
+                    <Button
+                        color="Orange"
+                        onPress={this.props.onLoginPress}
+                        title="Submit"
+                    />
+                </TouchableHighlight>
 
             </ScrollView>
         )
     }
 
 }
-/*
-const styles = Stylesheet.create({
-    button: {
-        backgroundColor: "darkorange",
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: 'transparent',
+        resizeMode: 'cover',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: null,
+        height: null
+    },
+
+    title: {
+        fontSize: 36,
+        fontFamily: 'sans-serif',
+        color: 'orange',
+        margin: 10,
+        alignItems: 'center',
+    },
+    text: {
+        backgroundColor: "white",
         paddingVertical: 12,
         paddingHorizontal: 25,
-        borderRadisu: 25
-    },
-    buttonText: {
-        color: "white",
-        fontSize: 18
-    },
-});
-*/
+        borderRadius: 25,
+        margin: 10,
+        alignItems: 'center',
 
+    },
+    button: {
+        height: 40,
+        width: 160,
+        borderRadius: 10,
+        color: "orange",
+        backgroundColor: "orange",
+        marginLeft: 50,
+        marginRight: 50,
+        marginTop: 20,
+        alignItems: 'center',
+    }
+}); 
