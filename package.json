@@ -1,5 +1,5 @@
 {
-  "homepage": "https://aprilslis.github.io/pomodoroExerciseTimer/",
+  "homepage": "https://aprilslis.github.io/pomodoroExerciseTimer",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
