@@ -1,0 +1,24 @@
+{
+  "files": {
+    "app.js": "/pomodoroExerciseTimer/static/js/app.4e9c508a.chunk.js",
+    "app.js.map": "/pomodoroExerciseTimer/static/js/app.4e9c508a.chunk.js.map",
+    "runtime~app.js": "/pomodoroExerciseTimer/static/js/runtime~app.750db99c.js",
+    "runtime~app.js.map": "/pomodoroExerciseTimer/static/js/runtime~app.750db99c.js.map",
+    "static/js/2.d9a80ab5.chunk.js": "/pomodoroExerciseTimer/static/js/2.d9a80ab5.chunk.js",
+    "static/js/2.d9a80ab5.chunk.js.map": "/pomodoroExerciseTimer/static/js/2.d9a80ab5.chunk.js.map",
+    "fonts/Ionicons.ttf": "/pomodoroExerciseTimer/./fonts/Ionicons.ttf",
+    "favicon-16.png": "/pomodoroExerciseTimer/favicon-16.png",
+    "favicon-32.png": "/pomodoroExerciseTimer/favicon-32.png",
+    "favicon.ico": "/pomodoroExerciseTimer/favicon.ico",
+    "index.html": "/pomodoroExerciseTimer/index.html",
+    "manifest.json": "/pomodoroExerciseTimer/manifest.json",
+    "serve.json": "/pomodoroExerciseTimer/serve.json",
+    "static/js/2.d9a80ab5.chunk.js.LICENSE.txt": "/pomodoroExerciseTimer/static/js/2.d9a80ab5.chunk.js.LICENSE.txt",
+    "static/media/tomato.jpg": "/pomodoroExerciseTimer/static/media/tomato.f5d1a946.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.750db99c.js",
+    "static/js/2.d9a80ab5.chunk.js",
+    "static/js/app.4e9c508a.chunk.js"
+  ]
+}
